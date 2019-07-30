@@ -1,0 +1,33 @@
+@mixin tr($property: all, $time: .3s) {
+	transition: $property $time linear;
+}
+
+@mixin myPos($top: 50%, $left: 50%, $tx: -50%, $ty: -50%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	transform: translate($tx, $ty);
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin bg-cover {
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin btn {
+	padding: 10px 25px;	
+	border-radius: 2px;
+	border: 1px solid transparent;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+    outline: none;
+    color: $services-clr;
+}
