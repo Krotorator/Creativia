@@ -53,10 +53,7 @@
         itemSelector: '.portfolio__item',
         layoutMode: 'fitRows',
         fitWidth: true
-
-        
-
-    });
+ });
 
     $('.portfolio__link').on('click', function (e) {
         e.preventDefault();
